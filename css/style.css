@@ -7,11 +7,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+section {
+    padding: 30px 80px;
+    background-color: #f7f7f7;
+}
+
 .hero {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,20 +24,27 @@
 
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 10px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.5s;
 }
+
+header.sticky {
+    padding: 10px 80px;
+    background-color: #f7f7f7;
+}
+
 
 .logo{
     width: 80px;
     /* height: 80px; */
-    border-radius: 50%;
+    border-radius: 10px;
 }
 
 .nav {
@@ -122,6 +133,7 @@ header {
 
 .social-media li {
     list-style: none;
+    /* margin-bottom: 10px; */
 }
 
 .social-media li a {
@@ -139,4 +151,35 @@ header {
     height: 100%;
     background: #EE5D2C;
     clip-path: circle(600px at right 800px)
+}
+
+
+.section-title {
+    color: #EE5D2C;
+    text-align: center;
+    font-weight: 400;
+    padding: 0 0 15px;
+    margin-bottom: 50px;
+    /* display: inline-block; */
+    /* border-bottom: #EE5D2C solid; */
+
+}
+
+.contentBox {
+    display: flex;
+}
+
+.w50 {
+    min-width: 50%;
+}
+
+.about-img {
+    background-image: url("../images/autumn_leaves.jpg");
+    background-size: cover;
+    height: 90vh;
+}
+
+.about-text {
+    padding: 0 20px 0 30px;
+    height: 85vh;
 }
