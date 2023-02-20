@@ -12,7 +12,7 @@ section {
     background-color: #f7f7f7;
 }
 
-.hero {
+#hero {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -173,6 +173,12 @@ header.sticky {
     min-width: 50%;
 }
 
+
+/* ------------------*/
+/*  ABOUT US SECTION */
+/* ------------------*/
+
+
 .about-img {
     background-image: url("../images/autumn_leaves.jpg");
     background-size: cover;
@@ -181,5 +187,27 @@ header.sticky {
 
 .about-text {
     padding: 0 20px 0 30px;
-    height: 85vh;
+    max-height: 85vh;
 }
+
+
+/* ------------------*/
+/*  WHAT WE DO SECTION */
+/* ------------------*/
+#services {
+    background-color: #FDF2E9;;
+}
+
+.item {
+    padding: 10px;
+}
+
+.service-icon {
+    height: 90px;
+    width: 90px;
+}
+
+
+/* --------------------*/
+/*  CONTACT US SECTION */
+/* --------------------*/
