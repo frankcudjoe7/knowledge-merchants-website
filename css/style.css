@@ -469,9 +469,6 @@ section {
     transform: scale(0.9);
 }
 
-header {
-    /* background-color: var(--color-secondary); */
-}
 
 @media screen and (max-width: 375px) {
     .hero__title {
