@@ -586,6 +586,15 @@ form {
     justify-content: space-between;
 }
 .footer__text {
+    font-size: 1.8rem;
+}
+
+@media screen and (min-width: 768px){
+    .footer__text {
+        font-size: 2rem;
+    }
+}
+.footer__text {
     display: inline-block;
     margin: 1em 0;
 }
