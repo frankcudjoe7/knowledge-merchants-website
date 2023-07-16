@@ -11,10 +11,11 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <header>
-        <nav class="nav collapsible container">
+    <header class="container">
+        <nav class="nav collapsible">
             <a href="/"><img src="images/km_logo.jpg" alt="Logo" class="nav__logo"></a>
             <svg class="icon nav__toggler">
                 <use xlink:href="images/sprite.svg#menu"></use>
@@ -28,15 +29,15 @@
         </nav>
     </header>
     <section id="hero">
-        <div class="hero__circle"></div>
+        <div class="hero__circle" data-aos="zoom-in-left"></div>
         <div class="container">
-            <div class="hero__content">
+            <div class="hero__content" data-aos="fade-right">
                 <h2>It's not just about books. We're</h2>
                 <h1 class="hero__title headings">Knowledge Merchants</h1>
                 <p class="hero__subtext">A collective of individuals who share a common vision of changing the world's essence. Our primary objective is to positively impact the local community, which in turn contributes to the global spirit.</p>
                 <!-- <a href="#" class="btn btn--primary">Learn More</a> -->
             </div>
-            <ul class="list social-media">
+            <ul class="list social-media" data-aos="fade-left">
                 <li><a href="#">
                     <svg class="icon">
                     <use xlink:href="images/sprite.svg#whatsapp"></use>
@@ -60,9 +61,11 @@
             </ul>
         </div>
     </section>
-    <section id="about-us">
+    <section id="about-us" data-aos="fade-up">
         <div class="container">
-            <h2 class="section__title headings">About Us</h2>
+            <header>
+                <h2 class="section__title headings">About Us</h2>
+            </header>
             <div class="about-us__content">
                 <div class="about-us__image">
                     <!-- <img src="images/autumn_leaves.jpg" alt=""> -->
@@ -80,11 +83,13 @@
             </div>
         </div>
     </section>
-    <section id="what-we-do">
+    <section id="what-we-do" data-aos="fade-up">
         <div class="container">
-            <h2 class="section__title headings">What We Do</h2>
+            <header>
+                <h2 class="section__title headings" data-aos="fade-up">What We Do</h2>
+            </header>
             <div class="what-we-do__content grid grid--cols-2 grid--cols-3">
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <span class="icon-container icon-container--tertiary">
                         <svg class="icon icon--white">
                             <use xlink:href="images/sprite.svg#print-solid"></use>
@@ -95,7 +100,7 @@
                     <a href="" class="card__link">LEARN MORE</a>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <span class="icon-container icon-container--tertiary">
                         <svg class="icon icon--white">
                             <use xlink:href="images/sprite.svg#book-open-solid"></use>
@@ -105,7 +110,7 @@
                     <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quo sequi odit maiores quis commodi libero quia repellat consequuntur harum!</p>
                     <a href="" class="card__link">LEARN MORE</a>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <span class="icon-container icon-container--tertiary">
                         <svg class="icon icon--white">
                             <use xlink:href="images/sprite.svg#hand-holding-heart-solid"></use>
@@ -115,7 +120,7 @@
                     <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quo sequi odit maiores quis commodi libero quia repellat consequuntur harum!</p>
                     <a href="" class="card__link">LEARN MORE</a>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <span class="icon-container icon-container--tertiary">
                         <svg class="icon icon--white">
                             <use xlink:href="images/sprite.svg#user-solid"></use>
@@ -126,7 +131,7 @@
                     <a href="" class="card__link">LEARN MORE</a>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <span class="icon-container icon-container--tertiary">
                         <svg class="icon icon--white">
                             <use xlink:href="images/sprite.svg#comments-solid"></use>
@@ -137,7 +142,7 @@
                     <a href="" class="card__link">LEARN MORE</a>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <span class="icon-container icon-container--tertiary">
                         <svg class="icon icon--white">
                             <use xlink:href="images/sprite.svg#facebook-f"></use>
@@ -151,8 +156,10 @@
         </div>
     </section>
 
-    <section id="contact-us">
-        <h2 class="section__title headings">Contact Us</h2>
+    <section id="contact-us" data-aos="fade-left">
+        <header>
+            <h2 class="section__title headings">Contact Us</h2>
+        </header>
         <form>
             <!-- <label for="fname">First Name</label> -->
             <input id="fname" class="input" placeholder="First Name" type="text" required minlength="3" maxlength="20">
@@ -176,5 +183,9 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
