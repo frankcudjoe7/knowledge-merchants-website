@@ -27,6 +27,7 @@ body {
     font-size: 2rem;
     line-height: 1.5;
     background-color: var(--color-secondary);
+    overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -496,7 +497,7 @@ section {
     }
 
     .social-media {
-        top: 50%;
+        top: 30%;
         right: 30px;
         transform: translateY(-50%);
     }
