@@ -410,6 +410,7 @@ section {
     color: var(--color-body);
     position: relative;
     /* padding-bottom: 15em; */
+    /* overflow-x: hidden; */
 }
 
 .hero__content {
@@ -471,7 +472,7 @@ section {
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
     .hero__title {
         font-size: 5rem;
     }
@@ -480,10 +481,10 @@ section {
         font-size: 1.7rem;
     }
 
-    .hero__subtext {
+    /* .hero__subtext {
         font-size: 5rem;
         line-height: 1.7;
-    }
+    } */
 }
 
 
