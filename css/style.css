@@ -472,7 +472,7 @@ section {
 }
 
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 370px) {
     .hero__title {
         font-size: 5rem;
     }
