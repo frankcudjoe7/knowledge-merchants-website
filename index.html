@@ -9,7 +9,6 @@
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://knowledgemerchants.com">
-
     <title>Knowledge Merchants</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,23 +20,25 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
-    <header class="container">
-        <nav class="nav collapsible">
-            <a href="/"><img src="images/km_logo.jpg" alt="Logo" class="nav__logo"></a>
-            <svg class="icon nav__toggler">
-                <use xlink:href="images/sprite.svg#menu"></use>
-            </svg>
-            <ul class="list nav__list collapsible__content">
-                <li class="nav__list__item"><a href="#">Home</a></li>
-                <li class="nav__list__item"><a href="#about-us">About Us</a></li>
-                <li class="nav__list__item"><a href="#what-we-do">What We Do</a></li>
-                <li class="nav__list__item"><a href="#contact-us">Contact Us</a></li>
-            </ul>
-        </nav>
+    <header class="hero__header">
+        <div class="container">
+            <nav class="nav collapsible">
+                <a href="/"><img src="images/km_logo.jpg" alt="Logo" class="nav__logo"></a>
+                <svg class="icon nav__toggler">
+                    <use xlink:href="images/sprite.svg#menu"></use>
+                </svg>
+                <ul class="list nav__list collapsible__content">
+                    <li class="nav__list__item"><a href="#">Home</a></li>
+                    <li class="nav__list__item"><a href="#about-us">About Us</a></li>
+                    <li class="nav__list__item"><a href="#what-we-do">What We Do</a></li>
+                    <li class="nav__list__item"><a href="#contact-us">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <section id="hero">
-        <div class="hero__circle" data-aos="zoom-in-left"></div>
         <div class="container">
+            <div class="hero__circle" data-aos="zoom-in-left"></div>
             <div class="hero__content" data-aos="fade-right">
                 <h2>It's not just about books. We're</h2>
                 <h1 class="hero__title headings">Knowledge Merchants</h1>
@@ -68,7 +69,7 @@
             </ul>
         </div>
     </section>
-    <section id="about-us" data-aos="fade-up">
+    <section id="about-us">
         <div class="container">
             <header>
                 <h2 class="section__title headings">About Us</h2>
@@ -90,7 +91,7 @@
             </div>
         </div>
     </section>
-    <section id="what-we-do" data-aos="fade-up">
+    <section id="what-we-do">
         <div class="container">
             <header>
                 <h2 class="section__title headings" data-aos="fade-up">What We Do</h2>
@@ -106,7 +107,6 @@
                     <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quo sequi odit maiores quis commodi libero quia repellat consequuntur harum!</p>
                     <a href="" class="card__link">LEARN MORE</a>
                 </div>
-
                 <div class="card" data-aos="zoom-in">
                     <span class="icon-container icon-container--tertiary">
                         <svg class="icon icon--white">
@@ -162,8 +162,7 @@
             </div>
         </div>
     </section>
-
-    <section id="contact-us" data-aos="fade-left">
+    <section id="contact-us">
         <header>
             <h2 class="section__title headings">Contact Us</h2>
         </header>
@@ -180,7 +179,6 @@
                 <button type="reset" class="btn btn--primary">Reset</button>
             </div>
         </form>
-
     </section>
     <footer class="footer">
         <div class="container footer__content">
@@ -189,6 +187,7 @@
             <p class="footer__text">Developed by <a href="https://frankcudjoe7.github.io/" target="_blank">Frank</a></p>
         </div>
     </footer>
+
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
